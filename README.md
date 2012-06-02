@@ -6,7 +6,7 @@ PcPhpDataColumn
 While developing a table using CGridView, I needed to run a code snippet for each row (and for each data object being handled/rendered in that row). I couldn't use CDataColumn since the PHP code CDataColumn expect is simple and would need to be run when prefixed by 'return...'. 
 The PcPhpDataColumn class provided by this extension is an 'extension' (OO term) of CDataColumn and overwrites its evaluateExpression() method to allow running of more complex code snippets. 
 
-Yii extension that provides a 'data column' with flexible PHP code snippet running capability.
+Yii extension that provides a 'data column' with flexible PHP code running capability.
 
 ## Requirements
 
@@ -35,3 +35,8 @@ $this->widget('zii.widgets.grid.CGridView', array(
 ```
 
 - IMPORTANT: make sure that your code "return"s a value. This value is the value that will be considered as the value of the table cell.                                                                       
+
+
+## Resources
+
+- [CDataColumn documentation](http://www.yiiframework.com/doc/api/1.1/CDataColumn). Please refer to this resource for complete information on CDataColumn (which this extension extends).
